@@ -1,0 +1,74 @@
+
+.top-header {
+    background-color: #4a249d;
+    height: 100px;
+    place-content: center;
+    display: block;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(
+        174.2deg,
+        rgba(255, 244, 228, 1) 7.1%,
+        rgba(240, 246, 238, 1) 67.4%
+    );
+    font-family: "Lato", sans-serif;
+}
+
+.start-container {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.logo img {
+    width: 700px;
+    max-width: 90%;
+    display: block;
+    margin: -40px 0 0 0;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #5f2c82, #8e2de2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: -40px 0 0 0;  /* remove extra spacing */
+}
+
+/* サブタイトル */
+.subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* ボタン */
+button {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    color: white;
+    border: none;
+    padding: 14px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;   /* ← 丸くなる */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ホバー */
+button:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* 押したとき */
+button:active {
+    transform: translateY(1px);
+}
